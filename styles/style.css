@@ -1,7 +1,7 @@
 /* add simple css for aligning stuff */
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 header, footer {
@@ -10,11 +10,20 @@ header, footer {
     padding: 15px;
 }
 
+h1 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
 img {
-    width: 150px;
+    width: 200px;
     background-color: blanchedalmond;
     border: white solid 5px;
     border-radius: 4px;
+    margin-left: 15px;
 }
 
 .header_container {
@@ -32,10 +41,34 @@ img {
     margin-right: 0 auto;
 }
 
+.profile > h3, .profile > p {
+    margin: 8px ;
+}
+
 .content_references, .footer_notes {
     font-size: .75em;
 }
 
-.footer_links:visited, .footer_links:default {
+/* links will always be white */
+.footer_links:visited, .footer_links:link, .mailto_link:visited, .mailto_link:link {
     color: white;
+}
+
+main {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 10px;
+}
+
+aside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    padding: 10px;
+    font-size: .9em;
+    border: 2px dotted #003333;
 }
