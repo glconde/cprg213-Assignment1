@@ -10,10 +10,6 @@ header, footer {
     padding: 15px;
 }
 
-h1 {
-    font-size: 1.4em;
-}
-
 h3 {
     font-size: 1.1em;
 }
@@ -24,6 +20,11 @@ img {
     border: white solid 5px;
     border-radius: 4px;
     margin-left: 15px;
+}
+
+.hidden_h1, .hidden_h2 {
+    height: 0px;
+    width: 0px;
 }
 
 .header_container {
